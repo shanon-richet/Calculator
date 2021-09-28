@@ -55,8 +55,16 @@ const section = document.querySelector('section');
 var égal = document.querySelector('.égal').onclick = function(){
     rep.innerHTML += "=" + eval(rep.innerHTML);  
     var history = document.createElement('p');
-   history.innerText = date + '~' + (rep.innerHTML); 
+   history.innerText = date + '(' + (rep.innerHTML) + ')'; 
     section.appendChild(history)
+}
+
+document.body.addEventListener("keydown", keyEvent);
+function keyEvent(event){
+    var x = event.keyCode;
+    if (x = 32){
+    égal();
+    }
 }
 
 var field= document.querySelector('.reset').onclick= function() {
