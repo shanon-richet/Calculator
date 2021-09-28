@@ -1,0 +1,59 @@
+body{
+    background-color:grey;
+}
+input {
+    font-size: 50px;
+}
+legend{
+    font-size:30px;
+    position:relative;
+    width:1200px;
+    height:900px;
+    color:whitesmoke;
+    border:1px ridge whitesmoke;
+    text-align: center;
+    background-color: black;
+}
+form{
+    margin:20px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+input{
+    background-color: darkcyan;
+    color:whitesmoke;
+    border: 2px ridge black;
+    border-radius: 5%;
+}
+input:hover{
+    background-color: darkmagenta;
+}
+textarea{
+    color:whitesmoke;
+    background-color: darkcyan;
+    margin-left: 5%;
+    height:60px;
+    font-size:50px;
+    letter-spacing: 10px;
+    overflow: auto;
+    margin-left: auto;
+}
+textarea .réponse:focus{
+    background-color: darkmagenta;
+}
+.history{
+    width:600px;
+    height:200px;
+    border-top:none;
+    margin-left:-3px;   
+    font-size: 19px;
+}
+p{
+    font-size:30px;
+    color:white;
+    letter-spacing: 5px;
+}
+
