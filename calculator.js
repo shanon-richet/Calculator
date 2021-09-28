@@ -45,9 +45,23 @@ var multiplication = document.querySelector('.multiplication').onclick = functio
 var division = document.querySelector('.division').onclick = function(){
     rep.innerHTML += "/";
 }
+
+let today = new Date()
+let date = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+
+const section = document.querySelector('section');
+
 var égal = document.querySelector('.égal').onclick = function(){
-    rep.innerHTML += "=" + eval(rep.innerHTML);   
+    rep.innerHTML += "=" + eval(rep.innerHTML);  
+    var history = document.createElement('p');
+   history.innerText = date + '~' + (rep.innerHTML); 
+    section.appendChild(history)
 }
+
 var field= document.querySelector('.reset').onclick= function() {
     rep.innerHTML = "";
 }
+
+
+
