@@ -47,12 +47,12 @@ var division = document.querySelector('.division').onclick = function(){
 }
 
 let today = new Date()
-let date = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+let date = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + ":" + today.getMilliseconds();
 
 
 const section = document.querySelector('section');
 
-var égal = document.querySelector('.égal').onclick = function(){
+var égal = document.querySelector('.égal').onclick = function égal(){
     rep.innerHTML += "=" + eval(rep.innerHTML);  
     var history = document.createElement('p');
    history.innerText = date + '(' + (rep.innerHTML) + ')'; 
@@ -70,6 +70,5 @@ function keyEvent(event){
 var field= document.querySelector('.reset').onclick= function() {
     rep.innerHTML = "";
 }
-
 
 
