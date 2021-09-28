@@ -1,5 +1,18 @@
+body{
+    background-color:grey;
+}
 input {
     font-size: 50px;
+}
+legend{
+    font-size:30px;
+    position:relative;
+    width:1000px;
+    height:900px;
+    color:whitesmoke;
+    border:1px ridge whitesmoke;
+    text-align: center;
+    background-color: black;
 }
 main{
     background-color: black;
@@ -21,4 +34,10 @@ textarea{
     margin-left: 20%;
     height:60px;
     font-size:50px;
+    letter-spacing: 10px;
+}
+p{
+    font-size:30px;
+    color:white;
+    letter-spacing: 5px;
 }
