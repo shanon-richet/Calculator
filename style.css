@@ -1,57 +1,73 @@
-body{
-    background-color:grey;
+body {
+    background-color:#474647;
 }
-input {
-    font-size: 50px;
+main {
+    display: flex;
+    justify-content: center;
 }
-legend{
+h4, .egal {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+input, textarea {
+    background-color: #2B4141;
+    border: 3px ridge orange;
+    border-radius: 3%;
+}
+h4 {
+    width: 200px;
+    color: black;
+    background-image: linear-gradient(#F06543, #EEB902, #F06543)
+}
+legend {
     font-size:30px;
     position:relative;
-    width:1200px;
-    height:900px;
+    width:600px;
+    height:1300px;
     color:whitesmoke;
-    border:1px ridge whitesmoke;
     text-align: center;
     background-color: black;
+    border: 5px ridge orange;
 }
-form{
-    margin:20px;
+form {
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 80px;
     display:grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    row-gap: 5px;
-    column-gap: 5px;
 }
-input{
-    background-color: darkcyan;
+input {
+    font-size: 30px;
+    width: 150px;
+    height: 100px;
     color:whitesmoke;
-    border: 2px ridge black;
     border-radius: 5%;
 }
-input:hover{
+.egal {
+    left: 225px;
+}
+input:hover {
     background-color: darkmagenta;
 }
-textarea{
+textarea {
+    margin-top: 20px;
+    width: 550px;
     color:whitesmoke;
-    background-color: darkcyan;
     margin-left: 5%;
-    height:60px;
-    font-size:50px;
+    height: 60px;
+    font-size: 50px;
     letter-spacing: 10px;
     overflow: auto;
     margin-left: auto;
 }
-textarea .réponse:focus{
-    background-color: darkmagenta;
-}
-.history{
-    width:600px;
+.history {
     height:200px;
     border-top:none;
     margin-left:-3px;   
     font-size: 19px;
 }
-p{
+p {
     font-size:30px;
     color:white;
     letter-spacing: 5px;
