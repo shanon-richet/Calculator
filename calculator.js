@@ -1,4 +1,4 @@
-var rep= document.querySelector('.réponse');
+var rep= document.querySelector('.reponse');
 
 // nombres
 
@@ -62,15 +62,13 @@ var cosinus = document.querySelector('.cosinus').onclick = function(){
 var sinus = document.querySelector('.sinus').onclick = function(){
     rep.innerHTML += '=' + Math.sin(rep.innerHTML)
 }
-let today = new Date()
-let date = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + ":" + today.getMilliseconds();
-
 const section = document.querySelector('.history');
 
-var égal = document.querySelector('.égal').onclick = function égal(){
-    rep.innerHTML += "=" + eval(rep.innerHTML); 
-    var history = document.createTextNode(date + '(' + (rep.innerHTML) + ')');
-
+var calcul = []
+var egal = document.querySelector('.egal').onclick = function egal(){
+    calcul = rep.innerHTML 
+    rep.innerHTML = eval(rep.innerHTML)
+    var history = document.createTextNode(`/ (${calcul}=${rep.innerHTML}) `);
     section.appendChild(history)
 }
 
@@ -78,14 +76,10 @@ document.body.addEventListener("keydown", keyEvent);
 function keyEvent(event){
     var x = event.keyCode;
     if (x = 32){
-    égal();
+    egal();
     }
 }
 
 var field= document.querySelector('.reset').onclick= function() {
     rep.innerHTML = "";
 }
-
-
-
-
